@@ -1,0 +1,131 @@
+/* This should be added on top of a reveal.js theme (developpped with black theme) */
+
+/* Text changes */
+.author {
+    font-size:medium;
+  }
+.reveal {
+    font-size: 1.8em;
+}
+
+.reveal h2 {
+    font-size: 1.6em;
+}
+
+.reveal .pre_ul {
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.reveal ul {
+    line-height: 1.5em;
+}
+
+.reveal strong {
+    color: rgb(70, 128, 135);
+}
+
+/* Code changes */
+.reveal code {
+    line-height: 1.5em;
+}
+
+/* Create flex objects witch will be displayed in row (i.e. columns will be created) */
+.reveal .cols {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: stretch;
+}
+
+.reveal .cols > * {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 0px 20px;
+}
+
+.reveal .cols > div {
+    align-items: center;
+}
+
+/* Create style to have fragments which turn to have a low opactiy */
+.reveal .slides section .fragment.highlight-hide {
+  opacity: 1;
+  visibility: inherit;
+}
+
+.reveal .slides section .fragment.highlight-hide.visible {
+  opacity: 0.4;
+}
+
+/* SVG elements */
+svg .arrow {
+    stroke: gainsboro;
+    fill: gainsboro;
+    stroke-width: 5;
+}
+
+svg text {
+    fill: gainsboro;
+}
+
+/* Remove lines of tables mostly used for option list */
+.reveal table.simple th,
+.reveal table.simple td {
+    border: 0
+}
+.reveal table.simple th {
+    white-space: nowrap
+}
+.pleft {
+    text-align: left;
+}
+.menuselection {
+    background:#f447b7;
+    font-size: 80%;
+    border:1px solid #7fbbe3;
+    font-weight:700;
+    border-radius:4px;
+    padding:2.4px 6px;
+    margin:auto 2px
+}
+.text {
+    color: #ff0000;
+    background:#ffffff;
+    font-size: 80%;
+    border:1px solid #000000;
+    font-weight:300;
+    border-radius:4px;
+    padding:2.4px 6px;
+    margin:auto 2px
+}
+div.fixed {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    border: 3px solid #73AD21;
+  }
+.guilabel,
+.menuselection {
+  color :white;
+  font-size:80%;
+  font-weight:700;
+  border-radius:4px;
+  padding:2.4px 6px;
+  margin:auto 2px;
+  border:1px solid #e148cd;
+  background:#d33682
+}
+.precode {
+    color: #e74c3c;
+    white-space: normal;
+    font-family: SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,Courier,monospace;
+    padding: 2px 5px;
+    background: #fff;
+    border: 1px solid #e1e4e5;
+    font-size: 75%;
+    box-sizing: border-box;
+    
+}
